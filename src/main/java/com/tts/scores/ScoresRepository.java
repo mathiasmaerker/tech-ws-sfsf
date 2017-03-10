@@ -8,6 +8,6 @@ import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 
 @RepositoryRestResource(collectionResourceRel = "scores", path = "scores")
 public interface ScoresRepository extends PagingAndSortingRepository<Scores, Long> {
-		List<Scores> findByLastName(@Param("sfId") String sfId);
+		List<Scores> findBySfId(@Param("sfId") String sfId);
 	
 }
